@@ -1,24 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Contact from './component/contact';
 import './style.css';
-
-// move this component to it's own file and import it here
-const Contact = props => {
-  return (
-    <div className="friend-item">
-      {/* replace the values by a jsx expression */}
-      <h3>Emmanuel</h3>
-      <h4>myemmanuel@email.com</h4>
-      <h4>123123</h4>
-      {/* show the button only if isDeletable is true */}
-      <button>Delete</button>
-    </div>
-  );
-};
 
 export const App = (
   // write your HTML code here
-
   <div>
     <h1 className="text-center">My contacts list 📱</h1>
 
