@@ -34,21 +34,25 @@ const contactInfo = [
   },
 ];
 
-const Contact = (Props) => {
-  return (
-    <div className="friend-item">
-      <ul>
-        {contactInfo.map((Info, index) => (
-            <div className="friend-item">
-                <h3>{Info.Name}</h3>
-                <h4>{Info.Email}</h4>
-                <h4>{Info.Phone}</h4>
-                {Info.isDeletable ? <button>Delete</button> : null}
-            </div>
-        ))}
-      </ul>
-    </div>
-  );
-};
+function onPressDelete () {
+  alert('Cet utilisateur à bien été supprimé');
+}
+
+function Contact() {
+    return (
+        <div className="friend-item">
+            <ul>
+                {contactInfo.map((Info) => (
+                    <div className="friend-item">
+                        <h3>{Info.Name}</h3>
+                        <h4>{Info.Email}</h4>
+                        <h4>{Info.Phone}</h4>
+                        {Info.isDeletable ? <button onClick={() => onPressDelete()}>Delete</button> : null}
+                    </div>
+                ))}
+            </ul>
+        </div>
+    );
+}
 
 export default Contact;
