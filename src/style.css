@@ -4,20 +4,21 @@ body {
   width: 300px;
   font-family: Lato;
 }
-h1 {
+h1 container {
   text-align: center;
 }
 
 .friend-item {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   border: 1px solid grey;
   margin-bottom: 20px;
   padding: 10px 20px;
 }
 button {
-  background: rgb(235, 66, 66);
+  background: rgb(247, 9, 9);
   padding: 10px;
   color: white;
   border: none;
